@@ -1,71 +1,70 @@
-body{
-	margin: 0px;
-	padding: 0px;
-	height: 100vh;
-	width: 100%;
-	font-family: 'Chakra Petch', sans-serif;
-	background: #4ba1ab;
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Chakra Petch', sans-serif;
+    background: #4ba1ab;
 }
 
-*{
-	box-sizing: border-box;
-	font-family: 'Chakra Petch', sans-serif;
+* {
+    box-sizing: border-box;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 
-.container{
-	min-height: 100vh;
-	width: 100%;
-	background: #9ccc62;
-	background: -moz-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
-	background: -webkit-gradient(left top, right bottom, color-stop(0%, #9ccc62), color-stop(100%, #4ba1ac));
-	background: -webkit-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
-	background: -o-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
-	background: -ms-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
-	background: linear-gradient(135deg, #9ccc62 0%, #4ba1ac 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ccc62', endColorstr='#4ba1ac', GradientType=1 );
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background: #9ccc62;
+    background: -moz-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, #9ccc62), color-stop(100%, #4ba1ac));
+    background: -webkit-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
+    background: -o-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
+    background: -ms-linear-gradient(-45deg, #9ccc62 0%, #4ba1ac 100%);
+    background: linear-gradient(135deg, #9ccc62 0%, #4ba1ac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9ccc62', endColorstr='#4ba1ac', GradientType=1 );
 }
 
-.flexetron{
-	display: flex;
+.flexetron {
+    display: flex;
     align-items: center;
     justify-content: center;
     color: #fff;
     box-shadow: 0 0 20px 0px #20565d;
     transition: all 200ms linear;
     position: absolute;
-        z-index: 3;
+    z-index: 3;
 }
 
 
-.home-container{
-	position: relative;
+.home-container {
+    position: relative;
     height: 100vh;
 }
 
-.home-container h1{
-	font-size: 5em;
-
-}
-
-
-.home-container .btn-GW{
-	position: absolute;
-	right: 20px;
-	top: 20px;
-	min-width: 120px;
-	transition: all 200ms linear;
-	z-index: 4;
-}
+    .home-container h1 {
+        font-size: 5em;
+    }
 
 
-.home-container.showLogin .container{
-	width: 75%;
-}
+    .home-container .btn-GW {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        min-width: 120px;
+        transition: all 200ms linear;
+        z-index: 4;
+    }
 
 
-.btn-GW{
-	 padding: 6px 30px;
+    .home-container.showLogin .container {
+        width: 75%;
+    }
+
+
+.btn-GW {
+    padding: 6px 30px;
     font-family: inherit;
     background: rgba(155, 204, 99, 0.30980392156862746);
     border: 1px solid #9bcb64;
@@ -77,14 +76,14 @@ body{
 
 
 
-.btn-GW:hover{
-	 padding: 6px 22px;
-    letter-spacing: 6px;
-    box-shadow: 0 0 20px 0px #6aaf1b;
-}
+    .btn-GW:hover {
+        padding: 6px 22px;
+        letter-spacing: 6px;
+        box-shadow: 0 0 20px 0px #6aaf1b;
+    }
 
-.btn-BW{
-	padding: 6px 30px;
+.btn-BW {
+    padding: 6px 30px;
     font-family: inherit;
     background: rgb(57, 139, 148);
     border: 1px solid #5ccad2;
@@ -95,14 +94,14 @@ body{
     margin-top: 20px;
 }
 
-.btn-BW:hover{
-	 padding: 6px 22px;
-    letter-spacing: 6px;
-    box-shadow: 0 0 20px 0px #5ccad2;
-}
+    .btn-BW:hover {
+        padding: 6px 22px;
+        letter-spacing: 6px;
+        box-shadow: 0 0 20px 0px #5ccad2;
+    }
 
-.form-control-login{
-	border: none;
+.form-control-login {
+    border: none;
     background: transparent;
     color: #fff;
     border-bottom: 1px solid #ddd;
@@ -112,16 +111,16 @@ body{
     outline: none;
     font-family: inherit;
     font-size: 16px;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
 
 input::-webkit-input-placeholder {
-color: #d0d0d0 !important;
+    color: #d0d0d0 !important;
 }
 
 
-.login-block{
-	position: absolute;
+.login-block {
+    position: absolute;
     right: 0px;
     height: 100%;
     width: 25%;
@@ -130,5 +129,10 @@ color: #d0d0d0 !important;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-        z-index: 2;
+    z-index: 2;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
 }
