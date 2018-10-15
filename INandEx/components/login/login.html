@@ -1,0 +1,13 @@
+<div class="home-container" id="homeContainer" ng-controller="loginController">
+    <div class="container flexetron">
+        <h1>IN and EX</h1>
+    </div>
+    <button class="btn-GW" id="login" ng-click="sigin()">SIGN IN</button>
+    <div class="login-block">
+        <form name="form" role="form" ng-submit="login(credentials)">
+            <input type="text" name="username" placeholder="username" class="form-control-login" autocomplete="off" ng-model="credentials.username">
+            <input type="password" name="username" placeholder="password" class="form-control-login" autocomplete="off" ng-model="credentials.password">
+            <button class="btn-BW" id="login" ng-disabled="form.$invalid || dataLoading">LOGIN</button>
+        </form>
+    </div>
+</div>

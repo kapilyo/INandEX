@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -106,8 +107,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="components\landing\landing.html" />
-    <Content Include="components\landing\landingController.js" />
+    <Content Include="components\login\login.html" />
+    <Content Include="components\login\loginController.js" />
     <Content Include="css\style.css" />
     <Content Include="index.html" />
     <Content Include="js\app.js" />
