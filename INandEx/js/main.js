@@ -1,5 +1,5 @@
-var inExApp = angular.module('inExApp', ['ngRoute', 'ngCookies']);
-
+var inExApp = angular.module('inExApp', ['ngRoute', 'ngCookies', 'chart.js']);
+//inExApp.constant("baseUrl", "http://localhost:59091/index.html");
 inExApp.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         .when('/', {
@@ -15,4 +15,6 @@ inExApp.config(['$routeProvider', function ($routeProvider) {
             controller: 'addExpenseController'
         })
         .otherwise({ redirectTo: 'components/login/login.html' });
-}])
+}]);
+
+

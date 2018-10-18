@@ -95,6 +95,9 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="components\dashboard\dashboard.html" />
+    <Content Include="components\dashboard\dashboardController.js" />
+    <Content Include="js\factories\authenticationFactory.js" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -113,9 +116,11 @@
     <Content Include="index.html" />
     <Content Include="js\app.js" />
     <Content Include="js\main.js" />
+    <Content Include="scripts\angular-chart.min.js" />
     <Content Include="scripts\angular-cookies.min.js" />
     <Content Include="scripts\angular-route.min.js" />
     <Content Include="scripts\angular.min.js" />
+    <Content Include="scripts\chart.js" />
     <Content Include="scripts\jquery-3.1.1.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>

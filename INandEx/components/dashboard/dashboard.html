@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <div class="summary-block">
+        <div class="summary">
+            <h4 ng-bind="monthSrc.exp">
+                
+            </h4>/<span ng-bind="monthSrc.inn"></span>
+        </div>
+        <div class="summary-bar-block">
+            <div class="bar-block">
+                <div class="bar-row">
+                    <span class="bar-occupied"  ng-style="{ 'width' : expPercent}"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="width: 450px;">
+
+        <canvas id="doughnut" class="chart chart-doughnut"
+                chart-data="data" chart-labels="labels"></canvas>
+    </div>
+</div>
